@@ -1,0 +1,29 @@
+# vertices of an octahedron follow. 
+v -1 0 0
+v 1 0 0
+v 0 -1 0
+v 0 1 0
+v 0 0 -1
+v 0 0 1
+# ... and face normals.
+vn -0.57735 -0.57735 -0.57735
+vn 0.57735 -0.57735 -0.57735
+vn -0.57735 0.57735 -0.57735
+vn 0.57735 0.57735 -0.57735
+vn -0.57735 -0.57735 0.57735
+vn 0.57735 -0.57735 0.57735
+vn -0.57735 0.57735 0.57735
+vn 0.57735 0.57735 0.57735
+# now the triangles themselves. Notice that texture 
+# information (which would go between the slashes) is
+# ommitted, and that all vertices of each triangle
+# have the same normal (the face normal). BTW, not all
+# polygons have only three vertices.
+f 1//1 5//1 3//1
+f 2//2 3//2 5//2
+f 1//3 4//3 5//3
+f 2//4 5//4 4//4
+f 1//5 3//5 6//5
+f 2//6 6//6 3//6
+f 1//7 6//7 4//7
+f 2//8 4//8 6//8
